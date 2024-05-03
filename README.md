@@ -5,7 +5,7 @@
 ## Integrantes
 
 <ul>
-    <li>Eric Fontino</li>
+    <li>Eric Fortino</li>
     <li>Victoria Ojeda</li>
     <li>Elias Orihuela</li>
     <li>Alexis Rios</li>
