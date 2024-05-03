@@ -20,6 +20,11 @@ footer {
     font-size: 1.5em;
     align-items: center;
 }
+footer > p{
+    margin-right: 20px;
+    font-size: 0.75em;
+}
+
 section{
     height: 100vh;
     margin-top: 20px;
