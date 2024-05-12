@@ -25,7 +25,25 @@
             <li class="button"><a href="./contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <main>estas en tutoriales</main>
+    <main>
+    </head>
+    <body>
+    <div class="container">
+        <h1>¡Recopilación de Tutoriales!</h1>
+        <label>Busca y selecciona el tipo de instrumento y el nombre:</label>
+        <form id="instrumentForm">
+            <select id="instrumentCategory" onchange="showInstrumentTypes()">
+                <option value="">Seleccione una categoría</option>
+                <option value="viento">Instrumento de viento</option>
+            </select>
+            <select id="instrumentType">
+                <option value="">Seleccione un instrumento</option>
+            </select>
+            <button type="submit" >Enviar</button>
+        </form>
+        <div id="guide-main-container"></div>
+    </div>
+    </main>
     <footer>
         <p class="copy">&copy; Proyecto desarrollado por el grupo 11 de Codo a Codo Fullstack Python</p>
         <i class='bx bxl-instagram'></i>
