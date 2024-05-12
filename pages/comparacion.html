@@ -6,6 +6,7 @@
     <title>Comparación de guitarras</title>
     <link rel="stylesheet" href="../css/comparacion.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../js/comparacion.js"></script>
 </head>
 <body>
     <header>
@@ -25,24 +26,56 @@
     <section>
         <h2>Elige tus guitarras</h2>
         <h4>Selecciona una guitarra de la lista y compara sus caracteristicas</h4>
-        <div>
+        <div class="marca">
             <form action="#">
-                <label for="guitarras">guitarras</label>
-                <select name="guitarras" id="guitarras">
+                <label for="guitarras_izq">Guitarra 1</label>
+                <select name="guitarras_izq" id="guitarras_izq" onchange="mostrar_info_guitarra('izquierda')">
+                    <option value= "#">Elija una opción</option>
                     <option value="B.C. Rich">B.C. Rich</option>
                     <option value="Jackson">Jackson</option>
                     <option value="Gibson">Gibson</option>
                 </select>
                 <input type="submit" value="Enviar" />
             </form>
-            <form action="#">
-                <label for="guitarras">guitarras</label>
-                <select name="guitarras" id="guitarras">
-                    <option value="B.C. Rich">B.C. Rich</option>
+            <form action= "#">
+                <label for="guitarras_der">Guitarra 2</label>
+                <select name="guitarras_der" id="guitarras_der" onchange="mostrar_info_guitarra('derecha')">
+                    <option value= "#">Elija una opción</option>
+                    <option value= "B.C. Rich">B.C. Rich</option>
                     <option value="Jackson">Jackson</option>
                     <option value="Gibson">Gibson</option>
                 </select>
                 <input type="submit" value="Enviar" />
+            </div>
+            <!--<div class="modelo" style="display:none">
+                <form action="#">
+                    <label for="guitarras_izq">Guitarra 1</label>
+                    <select name="guitarras_izq" id="guitarras_izq" onchange="mostrar_info_guitarra('izquierda')">
+                        <option value= "#">Elija una opción</option>
+                        <option value="B.C. Rich">B.C. Rich</option>
+                        <option value="Jackson">Jackson</option>
+                        <option value="Gibson">Gibson</option>
+                    </select>
+                    <input type="submit" value="Enviar" />
+                </form>
+                <form action= "#">
+                    <label for="guitarras_der">Guitarra 2</label>
+                    <select name="guitarras_der" id="guitarras_der" onchange="mostrar_info_guitarra('derecha')">
+                        <option value= "#">Elija una opción</option>
+                        <option value= "B.C. Rich">B.C. Rich</option>
+                        <option value="Jackson">Jackson</option>
+                        <option value="Gibson">Gibson</option>
+                    </select>
+                    <input type="submit" value="Enviar" />
+                </div>-->
+        <div class="containers">
+            <div id="informacionIzquierdaContainer" style="display:none;">
+                <!--Info luego de selección-->
+            </div>
+        
+            <div id="informacionDerechaContainer" style="display:none;">
+                <!--Info luego de selección-->
+            </div>
         </div>
         
     </section>
