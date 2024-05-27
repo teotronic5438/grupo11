@@ -30,16 +30,14 @@
     <body>
     <div class="container">
         <h1>¡Recopilación de Tutoriales!</h1>
-        <label>Busca y selecciona el tipo de instrumento y el nombre:</label>
+        <label>Selecciona una guitarra:</label>
         <form id="instrumentForm">
-            <select id="instrumentCategory" onchange="showInstrumentTypes()">
-                <option value="">Seleccione una categoría</option>
-                <option value="viento">Instrumento de viento</option>
-            </select>
             <select id="instrumentType">
-                <option value="">Seleccione un instrumento</option>
+                <option value="Guitarra Clasica">Guitarra Clasica</option>
+                <option value="Guitarra Acústica">Guitarra Acústica</option>
+                <option value="Guitarra Electrica">Guitarra Electrica</option>
             </select>
-            <button type="submit" >Enviar</button>
+            <button type="submit" class="botonForm" >Enviar</button>
         </form>
         <div id="guide-main-container"></div>
     </div>
