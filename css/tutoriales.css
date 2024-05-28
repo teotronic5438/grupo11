@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    }
+select, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+.botonForm{
+    background-color:  #FFA726;; 
+    color: #000; 
+    padding: 10px 20px; 
+    border: 1px solid #000;
+    border-radius: 10px; 
+    
+}
+.botonForm:hover {background-color: #cc7f0b;}
+.guide-header {
+    color: blue;
+}
+
+.iframe-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 10px;
+}
+.botonVerMas{
+    background-color:  #FFA726;; 
+    color: #000; 
+    padding: 10px 20px; 
+    border: 1px solid #000;
+    border-radius: 5px; 
+    
+}
+.botonVerMas:hover{background-color: #cc7f0b;}
