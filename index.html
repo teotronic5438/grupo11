@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- estilos propios de index -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- estilos para google icons -->
 </head>
 <body>
     <header>
@@ -26,7 +27,25 @@
         </ul>
     </nav>
     <main>
-        <p>HOME</p>
+        <div id="carousel" class="carousel">
+            <div class="carousel-images">
+              <div class="carousel-item">
+                <img src="./img/guitarra_acustica.jpg" alt="Nuevo modelo de guitarra acustica">
+                <div class="carousel-caption">Instrumento de cuerda con caja de resonancia que produce sonido sin necesidad de amplificación eléctrica.</div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/guitarra_clasica.jpg" alt="La mejor guitarra clasica">
+                <div class="carousel-caption" style="color: #1865f3;">Guitarra de cuerdas de nailon, ideal para tocar música clásica y flamenco, con una sonoridad suave y cálida.</div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/guitarra_electrica.jpg" alt="Version de guitarra electrica">
+                <div class="carousel-caption">Guitarra que necesita amplificación eléctrica para producir sonido, utilizada ampliamente en géneros como rock, blues y jazz.</div>
+              </div>
+              <!-- Agrega más imágenes según necesites -->
+            </div>
+            <button class="carousel-button prev">Anterior</button>
+            <button class="carousel-button next">Siguiente</button>
+          </div>               
     </main>
     <footer>
         <p class="copy">&copy; Proyecto desarrollado por el grupo 11 de Codo a Codo Fullstack Python</p>
