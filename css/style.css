@@ -61,7 +61,22 @@ footer{
     margin-top: 22px;
 }
 
-
+/*******************
+menu hamburguesa
+*******************/
+.toggle{
+    position: relative;
+	display: none;
+	background: none;
+	border: none;
+    color: #b83564;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+nav #menu{
+    transition: all 0.5s ease;
+}
 /***************************
         responsive carrusel
 ****************************/
@@ -81,12 +96,103 @@ footer{
         font-size: 16px;
         padding: 5px;
     }
+
+     /*********  hamburguesa ******/
+     nav { 
+        background-color: #ffb350; 
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        position: relative;
+     }
+    nav ul{
+        position: relative;
+        flex-direction: column;
+		width: 100%;
+        left: -390px;
+    }
+    a { 
+        text-decoration: none;
+        color: azure;
+    }
+    
+    .button{
+        margin: 5px;
+        margin-bottom: 0px;
+        padding: 10px;
+        background-color: #b83564;
+        color: azure;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    
+    }
+
+
+	.botonera-lista{
+		width: 100%;
+		display: none;
+	}
+    .botonera-lista-item{
+        width:250px;
+    }
+	.toggle{
+		display: inline;
+	}
+    .mostrar{
+        display: flex;
+    }
+    /*********  hamburguesa ******/
 }
 
 @media (min-width:768px) and (max-width:1024px){
     body{
         width: 100%;
     }
+    /*********  hamburguesa ******/
+    nav { 
+        background-color: #ffb350; 
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        position: relative;
+     }
+    nav ul{
+        position: relative;
+        flex-direction: column;
+		width: 100%;
+        left: -690px;
+    }
+    a { 
+        text-decoration: none;
+        color: azure;
+    }
+    
+    .button{
+        margin: 5px;
+        margin-bottom: 0px;
+        padding: 10px;
+        background-color: #b83564;
+        color: azure;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    
+    }
+
+
+	.botonera-lista{
+		width: 100%;
+		display: none;
+	}
+    .botonera-lista-item{
+        width:250px;
+    }
+	.toggle{
+		display: inline;
+	}
+    .mostrar{
+        display: flex;
+    }
+    /*********  hamburguesa ******/
     .carousel {
         width: 100vw;
     }
