@@ -22,10 +22,10 @@ main{
     text-align: center; 
 }
 
-.carousel-image {
+/* .carousel-image {
     width: 100%;
     display: block;
-}
+} */
 
 .carousel-caption {
     position: absolute;
@@ -59,4 +59,40 @@ main{
 footer{
     position: relative;
     margin-top: 22px;
+}
+
+
+/***************************
+        responsive carrusel
+****************************/
+
+@media (max-width:767px){
+    .carousel {
+        width: 100vw;
+    }
+    .carousel-item img{
+        width: 100vw;
+    }
+    footer{
+        height: auto;
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .carousel {
+        width: 100vw;
+    }
+    .carousel-item img{
+        width: 100vw;
+    }
+    main{
+        height: auto;
+    }
+    footer{
+        height: auto;
+        font-size: 20px;
+        padding: 5px;
+    }
 }
