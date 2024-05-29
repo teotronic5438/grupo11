@@ -1,9 +1,9 @@
 body{
     background-color: beige;
 }
-main{
+/* main{
     height: 84vh;
-}
+} */
 .carousel {
     position: relative;
     overflow: hidden;
@@ -67,6 +67,9 @@ footer{
 ****************************/
 
 @media (max-width:767px){
+    body{
+        width: 100vw;
+    }
     .carousel {
         width: 100vw;
     }
@@ -81,6 +84,9 @@ footer{
 }
 
 @media (min-width:768px) and (max-width:1024px){
+    body{
+        width: 100vw;
+    }
     .carousel {
         width: 100vw;
     }
