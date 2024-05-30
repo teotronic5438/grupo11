@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: lightgoldenrodyellow;
 }
 .container {
     max-width: 600px;
@@ -22,7 +23,9 @@ select, button {
     border-radius: 10px; 
     
 }
-.botonForm:hover {background-color: #cc7f0b;}
+.botonForm:hover {background-color: #cc7f0b;
+}
+
 .guide-header {
     color: blue;
 }
@@ -43,7 +46,41 @@ select, button {
 }
 .botonVerMas:hover{background-color: #cc7f0b;}
 
+.contenedor{
+    max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+}
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #e74c3c;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #34495e;
+}
+
 @media (max-width:767px){
+    .contenedor{
+        max-width: auto;
+    }
     .iframe-container{
         flex-direction: column;
     }
