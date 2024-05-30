@@ -7,9 +7,11 @@ header img{
 }
 header{  
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: beige;
-
+ }
+ header div, header h1{
+    margin: 10px;
  }
 footer {
     position: fixed;
