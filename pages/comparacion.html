@@ -17,6 +17,7 @@
     <header>
         <img src="../img/—Pngtree—guitar_1368015.png" alt="Guitarra puntiaguda">
         <h1>Comparación de guitarras</h1>
+        <img src="../img/—Pngtree—guitar_1368015.png" alt="Guitarra puntiaguda">
     </header>
     <nav>
         <button type="" class="toggle" id="boton">
@@ -32,9 +33,9 @@
     </nav>
     <section>
         <h2>Elige tus guitarras</h2>
-        <h4>Selecciona una guitarra de la lista y compara sus caracteristicas</h4>
+        <h4 class="subtitulo">Selecciona una guitarra de la lista y compara sus caracteristicas</h4>
         <div class="marca">
-            <form action="#">
+            <form action="#" class="form-guitarra">
                 <label for="guitarras_izq">Guitarra 1</label>
                 <select name="guitarras_izq" id="guitarras_izq" onchange="mostrar_info_guitarra('izquierda')">
                     <option value= "#">Elija una opción</option>
@@ -44,9 +45,8 @@
                     <option value="Ibanez RG">Ibanez RG</option>
                     <option value="Gibson SG">Gibson SG</option>
                 </select>
-                <input type="submit" value="Enviar" />
             </form>
-            <form action= "#">
+            <form action= "#" class="form-guitarra">
                 <label for="guitarras_der">Guitarra 2</label>
                 <select name="guitarras_der" id="guitarras_der" onchange="mostrar_info_guitarra('derecha')">
                     <option value= "#">Elija una opción</option>
@@ -56,7 +56,6 @@
                     <option value="Ibanez RG">Ibanez RG</option>
                     <option value="Gibson SG">Gibson SG</option>
                 </select>
-                <input type="submit" value="Enviar" />
             </div>
             <!--<div class="modelo" style="display:none">
                 <form action="#">
