@@ -1,4 +1,210 @@
-main{
-    height: 80vh;
-    background-color: aqua;
+body{
+    background-color: beige;
+}
+/* main{
+    height: 84vh;
+} */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Define un ancho específico si es necesario */
+    margin-bottom: 0px;
+}
+  
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    position: relative;
+    flex: 0 0 100%;
+    text-align: center; 
+}
+
+/* .carousel-image {
+    width: 100%;
+    display: block;
+} */
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0); /* Fondo semitransparente para el texto */
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFA726;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px; 
+}
+
+.next {
+    right: 10px;
+}
+
+footer{
+    position: relative;
+    margin-top: 22px;
+}
+
+/*******************
+menu hamburguesa
+*******************/
+.toggle{
+    position: relative;
+	display: none;
+	background: none;
+	border: none;
+    color: #b83564;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+nav #menu{
+    transition: all 0.5s ease;
+}
+/***************************
+        responsive carrusel
+****************************/
+
+@media (max-width:767px){
+    body{
+        width: 100%;
+    }
+    .carousel {
+        width: 100vw;
+    }
+    .carousel-item img{
+        width: 100vw;
+    }
+    footer{
+        height: auto;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+     /*********  hamburguesa ******/
+     nav { 
+        background-color: #ffb350; 
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        position: relative;
+     }
+    nav ul{
+        position: relative;
+        flex-direction: column;
+		width: 100%;
+        left: -390px;
+    }
+    a { 
+        text-decoration: none;
+        color: azure;
+    }
+    
+    .button{
+        margin: 5px;
+        margin-bottom: 0px;
+        padding: 10px;
+        background-color: #b83564;
+        color: azure;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    
+    }
+
+
+	.botonera-lista{
+		width: 100%;
+		display: none;
+	}
+    .botonera-lista-item{
+        width:250px;
+    }
+	.toggle{
+		display: inline;
+	}
+    .mostrar{
+        display: flex;
+    }
+    /*********  hamburguesa ******/
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    body{
+        width: 100%;
+    }
+    /*********  hamburguesa ******/
+    nav { 
+        background-color: #ffb350; 
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        position: relative;
+     }
+    nav ul{
+        position: relative;
+        flex-direction: column;
+		width: 100%;
+        left: -690px;
+    }
+    a { 
+        text-decoration: none;
+        color: azure;
+    }
+    
+    .button{
+        margin: 5px;
+        margin-bottom: 0px;
+        padding: 10px;
+        background-color: #b83564;
+        color: azure;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    
+    }
+
+
+	.botonera-lista{
+		width: 100%;
+		display: none;
+	}
+    .botonera-lista-item{
+        width:250px;
+    }
+	.toggle{
+		display: inline;
+	}
+    .mostrar{
+        display: flex;
+    }
+    /*********  hamburguesa ******/
+    .carousel {
+        width: 100vw;
+    }
+    .carousel-item img{
+        width: 100vw;
+    }
+    main{
+        height: auto;
+    }
+    footer{
+        height: auto;
+        font-size: 20px;
+        padding: 5px;
+    }
 }

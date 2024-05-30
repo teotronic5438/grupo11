@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -41,3 +42,21 @@ select, button {
     
 }
 .botonVerMas:hover{background-color: #cc7f0b;}
+
+@media (max-width:767px){
+    .iframe-container{
+        flex-direction: column;
+    }
+    iframe{
+        width: auto;
+        padding-bottom: 20px;
+    }
+}
+@media (min-width:768px) and (max-width:1279px){
+    .iframe-container{
+        flex-direction: column;
+    }
+    iframe{
+        padding-bottom: 20px;
+    }
+}
