@@ -44,6 +44,12 @@ article{
     width: 250px;
     text-align: center;
 }
+.subtitulo{
+    margin: 5px;
+}
+.form-guitarra{
+    margin: 10px;
+}
 .containers{
     display: flex;
     justify-content: space-evenly;
@@ -193,6 +199,24 @@ nav #menu{
         display: flex;
     }
     /*********  hamburguesa ******/
+
+    /* info guitarras */
+    .containers{
+        width: 100%;
+        display: block;
+    }
+    #informacionIzquierdaContainer, #informacionDerechaContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .containers article{
+        width: 100%;
+    }
+    article p{
+        margin: 5px;
+    }
 }
 
 
