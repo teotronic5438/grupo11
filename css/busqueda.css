@@ -87,5 +87,8 @@ button {
     .busquedaguitarra {
         flex-direction: column;
     }
+    .confirmarseleccion{
+        width: 100%;
+    }
 }
 
