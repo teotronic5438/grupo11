@@ -12,6 +12,9 @@ header{
 
  }
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
     display: flex;
     justify-content: flex-end;
     background-color: #272d4d;
@@ -19,6 +22,7 @@ footer {
     color: white;
     font-size: 1.5em;
     align-items: center;
+    margin-top: 5px;
 }
 footer > p{
     margin-right: 20px;
