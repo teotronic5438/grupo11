@@ -144,6 +144,55 @@ nav #menu{
 
 
 
+/***************************
+    responsive menu hamburguesa
+****************************/
+
+@media (max-width:767px){
+    body{
+        width: 100%;
+    }
+    footer{
+        height: auto;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+     /*********  hamburguesa ******/
+     nav { 
+        background-color: #b83564; 
+        display: flex;
+        height: auto;
+        position: relative;
+     }
+    nav ul{
+        flex-direction: column;
+		width: 100%;
+    }
+    a { 
+        text-decoration: none;
+        color: azure;
+    }
+    
+    #menu > .button{
+        width: 100%;
+        text-align: center;
+        color: azure;
+    
+    }
+	.botonera-lista{
+		width: 100%;
+		display: none;
+	}
+	.toggle{
+		display: inline;
+	}
+    .mostrar{
+        display: flex;
+    }
+    /*********  hamburguesa ******/
+}
+
 
 @media (min-width:768px) and (max-width:1024px){
     body{
