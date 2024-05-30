@@ -87,3 +87,13 @@ button {
     width: 100%;
     margin-top: 10px;
 }
+@media (max-width:767px) {
+    .busquedaguitarra {
+        flex-direction: column;
+    }
+    nav,ul {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+}
+
