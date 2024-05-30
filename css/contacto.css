@@ -101,3 +101,12 @@ main {
         margin-top: 20px; 
         width: 100%;
 }
+@media (max-width:767px) {
+    main {
+        flex-direction: column;
+    }
+    .informacion-contacto,.formulario-contacto {
+        width: 100%;
+    }
+
+}
