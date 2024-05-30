@@ -32,7 +32,8 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0); /* Fondo semitransparente para el texto */
+    /* Fondo semitransparente para el texto */
+    background-color: rgba(0, 0, 0, 0); 
     color: white;
     padding: 10px;
     font-size: 1.2em;
