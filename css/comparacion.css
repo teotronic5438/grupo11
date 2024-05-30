@@ -75,7 +75,6 @@ a {
     border-top-right-radius: 20px;
 
 }
-<<<<<<< HEAD
 
 
 /*******************
@@ -96,54 +95,55 @@ nav #menu{
 }
 
 
-/********************************
-    responsive menu hamburguesa
-*********************************/
 
-@media (max-width:767px){
-    body{
-        width: 100%;
-    }
-    footer{
-        height: auto;
-        font-size: 16px;
-        padding: 5px;
-    }
 
-     /*********  hamburguesa ******/
-     nav { 
-        background-color: #b83564; 
-        display: flex;
-        height: auto;
-        position: relative;
-     }
-    nav ul{
-        flex-direction: column;
-		width: 100%;
-    }
-    a { 
-        text-decoration: none;
-        color: azure;
-    }
-    
-    #menu > .button{
-        width: 100%;
-        text-align: center;
-        color: azure;
-    
-    }
-	.botonera-lista{
-		width: 100%;
-		display: none;
-	}
-	.toggle{
-		display: inline;
-	}
-    .mostrar{
-        display: flex;
-    }
-    /*********  hamburguesa ******/
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width:768px) and (max-width:1024px){
     body{
@@ -197,22 +197,4 @@ nav #menu{
         font-size: 20px;
         padding: 5px;
     }
-=======
-.imagen_guitarra{
-    height: 400px;
-}
-
-form input[type="submit"]{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px ;
-    background-color: rgb(184, 53, 100);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-form input[type="submit"]:hover{
-    background-color: rgb(219, 22, 94);
->>>>>>> f6f2d4ef13e0726c2014737eb0d73dd594dfb176
 }
