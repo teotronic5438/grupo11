@@ -21,6 +21,7 @@ document.querySelector('.seleccionarmarca button').addEventListener('click', fun
 
 document.querySelector('.confirmarseleccion button').addEventListener('click', function() {
     // Define la información de la guitarra
+    
     var guitarInfo = {
         image: 'https://bairesrocks.vteximg.com.br/arquivos/ids/244506/front.jpg?v=638439429284230000',
         brand: 'Cielito',
@@ -29,8 +30,9 @@ document.querySelector('.confirmarseleccion button').addEventListener('click', f
         details: 'Principales Características:\n-Medida 3/4.\n-Ideal para estudio/iniciación.\n-Cuerdas de nylon.\n-Trastes de bronce.\n-Clavijero de Precisión Niquelado Grabado.\n-Tapa de Abedul.\n-Diapasón de Kiri.\n-Origen Argentina.\n\nMedidas:\n-Largo total: 95 cm\n-Largo de escala: 38,5 cm\n-Ancho de cejilla: 43 mm\n-Profundidad del mango: 2,5 cm\n-Largo del cuerpo: 45 cm\n-Ancho superior del cuerpo: 25 cm\n-Ancho inferior del cuerpo: 33,7 cm\n-Profundidad de caja: 9,5 cm',
         demoVideo: 'https://www.youtube.com/embed/AAUOuVv3KdI'
     };
-
+    
     // Actualiza la sección de información de la guitarra
+    
     document.getElementById('guitar-image').src = guitarInfo.image;
     document.getElementById('guitar-brand').textContent = guitarInfo.brand;
     document.getElementById('guitar-name').textContent = guitarInfo.name;
@@ -38,7 +40,9 @@ document.querySelector('.confirmarseleccion button').addEventListener('click', f
     document.getElementById('guitar-details').textContent = guitarInfo.details;
 
     // Agrega el video demostrativo
+    
     var videoElement = document.createElement('iframe');
+    
     videoElement.src = guitarInfo.demoVideo;
     videoElement.width = 560;
     videoElement.height = 315;
@@ -47,6 +51,7 @@ document.querySelector('.confirmarseleccion button').addEventListener('click', f
     videoElement.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
     videoElement.referrerpolicy = "strict-origin-when-cross-origin";
     videoElement.allowfullscreen = true;
+    document.querySelector('.guitar-videos').innerHTML= ""; 
     document.querySelector('.guitar-videos').appendChild(videoElement);
 
     // Muestra la sección de información de la guitarra
