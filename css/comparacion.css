@@ -67,3 +67,125 @@ a {
     border-top-right-radius: 20px;
 
 }
+
+
+/*******************
+menu hamburguesa
+*******************/
+.toggle{
+    position: relative;
+	display: none;
+	background: none;
+	border: none;
+    color: white;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+nav #menu{
+    transition: all 0.5s ease;
+}
+
+
+/********************************
+    responsive menu hamburguesa
+*********************************/
+
+@media (max-width:767px){
+    body{
+        width: 100%;
+    }
+    footer{
+        height: auto;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+     /*********  hamburguesa ******/
+     nav { 
+        background-color: #b83564; 
+        display: flex;
+        height: auto;
+        position: relative;
+     }
+    nav ul{
+        flex-direction: column;
+		width: 100%;
+    }
+    a { 
+        text-decoration: none;
+        color: azure;
+    }
+    
+    #menu > .button{
+        width: 100%;
+        text-align: center;
+        color: azure;
+    
+    }
+	.botonera-lista{
+		width: 100%;
+		display: none;
+	}
+	.toggle{
+		display: inline;
+	}
+    .mostrar{
+        display: flex;
+    }
+    /*********  hamburguesa ******/
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    body{
+        width: 100%;
+    }
+
+     /*********  hamburguesa ******/
+     nav { 
+        background-color: #b83564; 
+        display: flex;
+        height: auto;
+        position: relative;
+     }
+    nav ul{
+        flex-direction: column;
+		width: 100%;
+    }
+    a { 
+        text-decoration: none;
+        color: azure;
+    }
+    
+    #menu > .button{
+        width: 100%;
+        text-align: center;
+        color: azure;
+    
+    }
+	.botonera-lista{
+		width: 100%;
+		display: none;
+	}
+	.toggle{
+		display: inline;
+	}
+    .mostrar{
+        display: flex;
+    }
+    /*********  hamburguesa ******/
+    .carousel {
+        width: 100vw;
+    }
+    .carousel-item img{
+        width: 100vw;
+    }
+    main{
+        height: auto;
+    }
+    footer{
+        height: auto;
+        font-size: 20px;
+        padding: 5px;
+    }
+}

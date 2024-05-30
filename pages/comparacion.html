@@ -6,20 +6,24 @@
     <title>Comparación de guitarras</title>
     <link rel="stylesheet" href="../css/comparacion.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- menu hamburguesa -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <img src="../img/—Pngtree—guitar_1368015.png" alt="Guitarra puntiaguda">
         <h1>Comparación de guitarras</h1>
-        <a href="#" class="button">Ingresar</a>
     </header>
     <nav>
-        <ul>
-            <li class="button"><a href="../index.html">Home</a></li>
-            <li class="button"><a href="./busqueda.html">Busqueda</a></li>
-            <li class="button"><a href="./comparacion.html">Comparación</a></li>
-            <li class="button"><a href="./tutoriales.html">Tutoriales</a></li>
-            <li class="button"><a href="./contacto.html">Contacto</a></li>
+        <button type="" class="toggle" id="boton">
+			<i class="fas fa-bars"></i>
+		</button>
+        <ul id="menu" class="botonera-lista">
+            <li class="button botonera-lista-item"><a href="../index.html">Home</a></li>
+            <li class="button botonera-lista-item"><a href="./busqueda.html">Busqueda</a></li>
+            <li class="button botonera-lista-item"><a href="./comparacion.html">Comparación</a></li>
+            <li class="button botonera-lista-item"><a href="./tutoriales.html">Tutoriales</a></li>
+            <li class="button botonera-lista-item"><a href="./contacto.html">Contacto</a></li>
         </ul>
     </nav>
     <section>
@@ -52,5 +56,6 @@
         <i class='bx bxl-facebook' ></i>
         <i class='bx bxl-twitter' ></i>
     </footer>
+    <script type="text/javascript" src="../js/hamburguesa.js"></script>
 </body>
 </html>
