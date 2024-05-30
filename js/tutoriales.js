@@ -11,7 +11,7 @@ if (tipoDeGuitarra !== "") {
     // Encabezado
     var guideHeader = document.createElement("h1");
     guideHeader.classList.add("guide-header"); //Clase
-    guideHeader.textContent = "Guía de " + tipoDeGuitarra;
+    guideHeader.textContent =  tipoDeGuitarra;
     guideContainer.innerHTML = ""; //resetea el div
     guideContainer.appendChild(guideHeader);
 
