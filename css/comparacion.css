@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+h2, h4{
+    background-color: beige
+}
 header img{
     height: 50px;
 }
