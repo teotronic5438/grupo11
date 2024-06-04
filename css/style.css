@@ -116,7 +116,7 @@ nav #menu{
     display: grid;
     /* outline: 5px solid red; */
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     gap: 30px;
 }
 .card{
@@ -174,6 +174,102 @@ nav #menu{
 .card:hover img{
     transform: scale(1.1);
 }
+
+/*******************
+    conferencia
+*******************/
+.conferencia-charlas{
+    height: auto;
+    margin-bottom: 50px;
+}
+.conferencia{
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.formulario_orador {
+    width: 100%;
+    background-color: #FFA726;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+    color: #272d4d;
+}
+
+.formulario_orador h3 {
+    text-align: center;
+    color: #272d4d;
+    font-size: 25px;
+}
+
+.formulario_orador label {
+    display: block;
+    margin: 10px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.formulario_orador input{
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all .4s ease-in-out;
+}
+.formulario_orador input:hover{
+    /* border: 1px solid rgb(184, 53, 100); */
+    box-shadow: 8px 8px 5px rgba(184,53,100,0.8);
+}
+
+.formulario_orador button {
+    background-color: #ffb350;
+    color: #272d4d;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 97%; /* Ancho completo */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    transition: all .5s ease-in-out;
+    margin: 10px auto;
+}
+
+.formulario_orador button:hover {
+    background-color: #b83564; /* Cambio de color al pasar el ratón por encima */
+    color: white;
+}
+
+.charlas {
+    text-align: center;
+}
+.charlas img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.charlas .ponente{
+    margin: 10px;
+    text-align: start;
+    padding: 5px 20px;
+    color: #272d4d;
+}
+.ponente p{
+    margin: 3px;
+}
+.charlas hr{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
 /***************************
         responsive carrusel
 ****************************/
@@ -244,6 +340,25 @@ nav #menu{
         width: 100%;
 
     }
+
+    /* ponentes */
+    .conferencia-charlas{
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .conferencia-charlas .conferencia{
+        width: 90%;
+        padding: 5px;
+        height: auto;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .formulario_orador{
+        padding: 0;
+    }
+
 }
 
 @media (min-width:768px) and (max-width:1024px){
@@ -312,5 +427,19 @@ nav #menu{
     }
     .card{
         width: 100%;
+    }
+
+    /* ponentes */
+    .conferencia-charlas{
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .conferencia{
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 }
