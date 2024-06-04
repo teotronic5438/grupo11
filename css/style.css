@@ -197,7 +197,9 @@ nav #menu{
         background-color: #b83564; 
         display: flex;
         height: auto;
-        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 1050;
      }
     nav ul{
         flex-direction: column;
@@ -220,6 +222,7 @@ nav #menu{
 	}
 	.toggle{
 		display: inline;
+        z-index: 1000;
 	}
     .mostrar{
         display: flex;
@@ -251,7 +254,9 @@ nav #menu{
         background-color: #b83564; 
         display: flex;
         height: auto;
-        position: relative;
+        position: sticky;   /* probando codigo relative */
+        top: 0;             /* probando codigo */
+        z-index: 1050;      /* probando codigo */
      }
     nav ul{
         flex-direction: column;
