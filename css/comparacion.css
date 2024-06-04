@@ -14,9 +14,11 @@ header{
     background-color: beige;
     position: relative;     /*prueba de codigo*/
     z-index: 10;            /*prueba de codigo*/
+    color: #272d4d;
  }
  header div, header h1{
     margin: 10px;
+    color: #272d4d;
  }
 footer {
     position: fixed;
